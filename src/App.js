@@ -2,15 +2,20 @@
 // Importing the Bootstrap CSS
 import React from 'react';
 import Main from './components/MainComponent';
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import './App.css';
 
+const store = ConfigureStore();
+
 const App = () => (
-  <React.Fragment>
-    <Main />
-  </React.Fragment>
+  <Provider store={store}>
+    <React.Fragment>
+      <Main />
+    </React.Fragment>
+  </Provider>
 );
 
 export default App;

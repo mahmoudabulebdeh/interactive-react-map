@@ -1,5 +1,9 @@
 {
   "token": "pk.eyJ1IjoidG9tdWtqb2JzIiwiYSI6ImNqeXJwbmNvaTBjaTQzZG51YjB1OGlrOHQifQ.ev27ZDY8IBfaDFtIizOXAw",
+  "latitude": "51.5049375",
+  "longitude": "-0.0964509",
+  "min": "1",
+  "max": "50",
   "styles": {
     "londonCycle": "mapbox://styles/mapbox/light-v9",
     "light": "mapbox://styles/mapbox/light-v9",
