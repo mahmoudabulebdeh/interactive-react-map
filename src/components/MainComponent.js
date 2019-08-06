@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import Map from './MapComponent';
+import ControlBar from './ControlBarComponent';
 import { connect } from 'react-redux';
 
 import { fetchTaxies } from '../redux/actions/ActionCreators';
@@ -32,6 +33,14 @@ class Main extends Component {
           <div className="d-flex justify-content-center" id="map">
             <Map
               taxies={this.props.taxies.taxies}
+              isLoading={this.props.taxies.isLoading}
+              errMess={this.props.taxies.errMess}
+            />
+          </div>
+          <div className="d-flex justify-content-center">
+            <ControlBar
+              count={this.props.taxies.count}
+              fetchTaxies={this.props.fetchTaxies}
               isLoading={this.props.taxies.isLoading}
               errMess={this.props.taxies.errMess}
             />

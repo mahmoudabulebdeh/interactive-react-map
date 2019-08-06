@@ -16,15 +16,16 @@ export const fetchTaxies = (count = TAXIES_COUNT) => dispatch => {
       return response.data;
     })
     .then(data => {
-      const playload = { ...data, count: count };
-      console.log(playload);
       dispatch({
         type: ActionTypes.ADD_TAXIES,
         payload: { taxies: { ...data }, count: count },
       });
     })
     .catch(function(error) {
-      console.log(error);
+      dispatch({
+        type: ActionTypes.TAXIES_FAILED,
+        payload: error,
+      });
     })
     .then(function() {});
 };
