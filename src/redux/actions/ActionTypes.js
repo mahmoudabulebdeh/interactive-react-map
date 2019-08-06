@@ -1,0 +1,3 @@
+export const TAXIES_LOADING = 'TAXIES_LOADING';
+export const TAXIES_FAILED = 'TAXIES_FAILED';
+export const ADD_TAXIES = 'ADD_TAXIES';
