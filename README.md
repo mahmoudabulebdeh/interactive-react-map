@@ -6,7 +6,7 @@ The page features a map, which displays red markers, indicating the up-to-date l
 ## Configurations
 
 To configure the API calls, go to the ApiConfig.js file in src/redux/actions/ApiConfig.js
-To configure the Map Component, go to mapConfig.json file in interactive-react-map/src/components/mapConfig.json
+To configure the Map Component, go to mapConfig.json file in src/components/mapConfig.json
 
 ## run from local
 
