@@ -32,6 +32,7 @@ export default function ControlBar(props) {
           marks={true}
           defaultValue={count}
           aria-labelledby="taxi-slider"
+          valueLabelDisplay="auto"
           step={1}
           min={parseInt(min)}
           max={parseInt(max)}
